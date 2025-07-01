@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico Medianeira</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --vermelho: #c40000;
+            --preto: #000000;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--branco);
+            color: var(--preto);
+        }
+
+        header {
+            background-color: var(--vermelho);
+            color: var(--branco);
+            padding: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo img {
+            width: 80px;
+            border-radius: 10px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--branco);
+            font-weight: bold;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: var(--preto);
+            color: var(--branco);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .contato {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .botao {
+            background-color: var(--vermelho);
+            color: var(--branco);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .botao:hover {
+            background-color: #a50000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="IMG-20250618-WA0025.jpg" alt="Diagnóstico Medianeira">
+            </div>
+            <div>
+                <h1>Diagnóstico Medianeira</h1>
+                <p>Especialistas em diagnóstico automotivo com precisão, agilidade e confiança.</p>
+                <p class="contato">
+                    Localização: Av. 24 de Outubro, 617 - Ipê, Medianeira - PR<br>
+                    Telefone: <a href="tel:+554531890031" style="color:white;">(45) 3189-0031</a> | WhatsApp: <a href="https://wa.me/5545991001150" style="color:white;">(45) 99100-1150</a>
+                </p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="consulta.html">Consulta de Serviços</a></li>
+                <li><a href="avaliacoes.html">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vindo à Diagnóstico Medianeira</h2>
+            <p>
+                Somos referência em diagnóstico veicular em Medianeira e região. Utilizamos tecnologia de ponta e profissionais qualificados para identificar e resolver problemas em seu veículo com rapidez e segurança.
+            </p>
+        </section>
+        <section>
+            <h2>Por que escolher a gente?</h2>
+            <ul>
+                <li>Diagnóstico preciso e rápido</li>
+                <li>Equipe especializada</li>
+                <li>Atendimento personalizado</li>
+                <li>Preços justos</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Agende um serviço</h2>
+            <p>Entre em contato conosco pelo telefone ou WhatsApp. Nossa equipe está pronta para te atender!</p>
+            <a href="consulta.html"><button class="botao">Consultar Serviço</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Diagnóstico Medianeira Sempre Tendo a Confiança do Nosso Clientes.</p>
+    </footer>
+</body>
+</html>

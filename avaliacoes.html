@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliações</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Avaliações de Clientes</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="consulta.html">Consulta</a> |
+      <a href="avaliacoes.html">Avaliações</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="avaliacao-form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+      <label for="comentario">Comentário:</label>
+      <textarea id="comentario" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="avaliacoes-lista"></div>
+  </main>
+
+  <footer>
+    <p>Diagnóstico Medianeira - (45) 3189-0031 | WhatsApp: (45) 99100-1150</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('avaliacao-form');
+    const lista = document.getElementById('avaliacoes-lista');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value;
+      const comentario = document.getElementById('comentario').value;
+
+      const novaAvaliacao = document.createElement('div');
+      novaAvaliacao.innerHTML = `<strong>${nome}</strong><p>${comentario}</p><hr>`;
+      lista.prepend(novaAvaliacao);
+
+      form.reset();
+    });
+  </script>
+</body>
+</html>
